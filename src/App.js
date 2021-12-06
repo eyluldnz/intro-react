@@ -1,23 +1,10 @@
 import './App.css';
+import Counter from './components/Counter'
 
 function App() {
-
-const info={
-  name:'Eylül Deniz Can',
-  location:"Turkey",
-  printInfo:()=>`${info.name} from ${info.location}`
-};
-
-const myElement=(
-  <h1>
-    Hello, {info.printInfo()} :)
-    <h2>Have a nice day !</h2>
-  </h1>
-
-);
-  return (
+ return(
     <div className="App">
-      {myElement}
+      <Counter/>     
     </div>
   );
 }
